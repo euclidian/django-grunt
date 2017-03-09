@@ -58,7 +58,7 @@ class Command(BaseCommand):
 
         # Check if the file exists.
         for resource_name in resources:
-            dst_path = os.path.abspath(os.path.join(dst_dir, grunt_settings.REQUIRE_BASE_URL, resource_name))
+            dst_path = os.path.abspath(os.path.join(dst_dir, grunt_settings.grunt_base_url, resource_name))
             if os.path.exists(dst_path) and not options["force"]:
                 if verbosity > 0:
                     self.stdout.write("{} already exists, skipping.\n".format(dst_path))

@@ -8,7 +8,7 @@ class LazySettings(object):
         return getattr(django_settings, "GRUNT_MODULES", {})
 
     @property
-    def grunt_base_url(selfself):
+    def grunt_base_url(self):
         return getattr(django_settings, "GRUNT_BASE_URL", "")
 
 settings = LazySettings()
