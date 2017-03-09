@@ -1,2 +1,7 @@
 .idea
 django_grunt
+grunt/admin.py
+grunt/apps.py
+grunt/models.py
+grunt/tests.py
+grunt/views.py
